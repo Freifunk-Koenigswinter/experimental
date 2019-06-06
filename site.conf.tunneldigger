@@ -3,13 +3,13 @@
 -- http://gluon.readthedocs.org/ for details.
 {
   -- Used for generated hostnames, e.g. freifunk-abcdef123456. (optional)
-  hostname_prefix = 'exp-',
+  hostname_prefix = 'exp-ffkw-',
 
   -- Name of the community.
-  site_name = 'Freifunk Koenigswinter Experimental',
+  site_name = 'Experimental Freifunk Koenigswinter',
 
   -- Shorthand of the community.
-  site_code = 'exp',
+  site_code = 'exp-ffkw',
 
   -- Prefixes used within the mesh. Both are required.
   prefix4 = '10.80.0.0/16',
@@ -43,7 +43,7 @@
 
     -- ESSID used for client network.
     ap = {
-        ssid = 'exp-freifunk-koenigswinter',
+        ssid = 'experimental-ff-koewi',
     },
   mesh = {
     id = '02:d1:14:37:fd:49',
@@ -60,7 +60,7 @@
     basic_rate = {6000, 9000, 18000, 36000, 54000},
 
     ap = {
-        ssid = 'exp-freifunk-koenigswinter',
+        ssid = 'experimental-ff-koewi',
     },
   mesh = {
     id = '02:d1:14:37:fd:49',
@@ -99,14 +99,12 @@
   -- what these options do.
 
   mesh_vpn = {
-  enabled = true,
+  enabled = false,
           mtu = 1398,
-    
-		
-tunneldigger = {
+ tunneldigger = {
    enabled = true,
    brokers = {
-    '195.8.226.17:20300',
+    '87.140.5.13:20300',
    },
   },
 		
